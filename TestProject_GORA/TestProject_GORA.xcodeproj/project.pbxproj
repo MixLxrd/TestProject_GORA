@@ -3,27 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		27EA5C8F26CE67B200CFF2C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5C8E26CE67B200CFF2C0 /* AppDelegate.swift */; };
 		27EA5C9126CE67B200CFF2C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5C9026CE67B200CFF2C0 /* SceneDelegate.swift */; };
-		27EA5C9326CE67B200CFF2C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5C9226CE67B200CFF2C0 /* ViewController.swift */; };
 		27EA5C9626CE67B200CFF2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EA5C9426CE67B200CFF2C0 /* Main.storyboard */; };
 		27EA5C9826CE67B300CFF2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EA5C9726CE67B300CFF2C0 /* Assets.xcassets */; };
 		27EA5C9B26CE67B300CFF2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EA5C9926CE67B300CFF2C0 /* LaunchScreen.storyboard */; };
+		27EA5CA826CE681400CFF2C0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CA726CE681400CFF2C0 /* NetworkService.swift */; };
+		27EA5CAA26CE682800CFF2C0 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CA926CE682800CFF2C0 /* NetworkDataFetcher.swift */; };
+		27EA5CAC26CE68EE00CFF2C0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CAB26CE68EE00CFF2C0 /* Users.swift */; };
+		27EA5CAE26CE692700CFF2C0 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CAD26CE692700CFF2C0 /* Albums.swift */; };
+		27EA5CB026CE695000CFF2C0 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CAF26CE695000CFF2C0 /* Photos.swift */; };
+		27EA5CB226CE6A1A00CFF2C0 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CB126CE6A1A00CFF2C0 /* UIView+AutoLayout.swift */; };
+		27EA5CB426CE6A9A00CFF2C0 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CB326CE6A9A00CFF2C0 /* UsersViewController.swift */; };
+		27EA5CB626CE6B4200CFF2C0 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CB526CE6B4200CFF2C0 /* UsersTableViewCell.swift */; };
+		27EA5CB826CE6E0100CFF2C0 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CB726CE6E0100CFF2C0 /* PhotosViewController.swift */; };
+		27EA5CBA26CE6E3300CFF2C0 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CB926CE6E3300CFF2C0 /* PhotosCollectionViewCell.swift */; };
+		27EA5CBD26CE76A000CFF2C0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 27EA5CBC26CE76A000CFF2C0 /* Kingfisher */; };
+		27EA5CBF26CE7C3900CFF2C0 /* UIView+RoundedShadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA5CBE26CE7C3900CFF2C0 /* UIView+RoundedShadows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27EA5C8B26CE67B200CFF2C0 /* TestProject_GORA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject_GORA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EA5C8E26CE67B200CFF2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27EA5C9026CE67B200CFF2C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27EA5C9226CE67B200CFF2C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27EA5C9526CE67B200CFF2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27EA5C9726CE67B300CFF2C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27EA5C9A26CE67B300CFF2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27EA5C9C26CE67B300CFF2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27EA5CA726CE681400CFF2C0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		27EA5CA926CE682800CFF2C0 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		27EA5CAB26CE68EE00CFF2C0 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		27EA5CAD26CE692700CFF2C0 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		27EA5CAF26CE695000CFF2C0 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		27EA5CB126CE6A1A00CFF2C0 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		27EA5CB326CE6A9A00CFF2C0 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		27EA5CB526CE6B4200CFF2C0 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		27EA5CB726CE6E0100CFF2C0 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		27EA5CB926CE6E3300CFF2C0 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		27EA5CBE26CE7C3900CFF2C0 /* UIView+RoundedShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedShadows.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EA5CBD26CE76A000CFF2C0 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +78,65 @@
 		27EA5C8D26CE67B200CFF2C0 /* TestProject_GORA */ = {
 			isa = PBXGroup;
 			children = (
+				27EA5CA626CE67FC00CFF2C0 /* Network */,
+				27EA5CA526CE67F700CFF2C0 /* Model */,
+				27EA5CA426CE67F300CFF2C0 /* View */,
+				27EA5CA326CE67EB00CFF2C0 /* Controller */,
+				27EA5CA226CE67E500CFF2C0 /* Helpers */,
 				27EA5C8E26CE67B200CFF2C0 /* AppDelegate.swift */,
 				27EA5C9026CE67B200CFF2C0 /* SceneDelegate.swift */,
-				27EA5C9226CE67B200CFF2C0 /* ViewController.swift */,
 				27EA5C9426CE67B200CFF2C0 /* Main.storyboard */,
 				27EA5C9726CE67B300CFF2C0 /* Assets.xcassets */,
 				27EA5C9926CE67B300CFF2C0 /* LaunchScreen.storyboard */,
 				27EA5C9C26CE67B300CFF2C0 /* Info.plist */,
 			);
 			path = TestProject_GORA;
+			sourceTree = "<group>";
+		};
+		27EA5CA226CE67E500CFF2C0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				27EA5CB126CE6A1A00CFF2C0 /* UIView+AutoLayout.swift */,
+				27EA5CBE26CE7C3900CFF2C0 /* UIView+RoundedShadows.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		27EA5CA326CE67EB00CFF2C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27EA5CB326CE6A9A00CFF2C0 /* UsersViewController.swift */,
+				27EA5CB726CE6E0100CFF2C0 /* PhotosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27EA5CA426CE67F300CFF2C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27EA5CB526CE6B4200CFF2C0 /* UsersTableViewCell.swift */,
+				27EA5CB926CE6E3300CFF2C0 /* PhotosCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27EA5CA526CE67F700CFF2C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27EA5CAB26CE68EE00CFF2C0 /* Users.swift */,
+				27EA5CAD26CE692700CFF2C0 /* Albums.swift */,
+				27EA5CAF26CE695000CFF2C0 /* Photos.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27EA5CA626CE67FC00CFF2C0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27EA5CA726CE681400CFF2C0 /* NetworkService.swift */,
+				27EA5CA926CE682800CFF2C0 /* NetworkDataFetcher.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +155,9 @@
 			dependencies = (
 			);
 			name = TestProject_GORA;
+			packageProductDependencies = (
+				27EA5CBC26CE76A000CFF2C0 /* Kingfisher */,
+			);
 			productName = TestProject_GORA;
 			productReference = 27EA5C8B26CE67B200CFF2C0 /* TestProject_GORA.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 27EA5C8226CE67B200CFF2C0;
+			packageReferences = (
+				27EA5CBB26CE76A000CFF2C0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 27EA5C8C26CE67B200CFF2C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +215,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EA5C9326CE67B200CFF2C0 /* ViewController.swift in Sources */,
 				27EA5C8F26CE67B200CFF2C0 /* AppDelegate.swift in Sources */,
+				27EA5CB826CE6E0100CFF2C0 /* PhotosViewController.swift in Sources */,
+				27EA5CBF26CE7C3900CFF2C0 /* UIView+RoundedShadows.swift in Sources */,
+				27EA5CA826CE681400CFF2C0 /* NetworkService.swift in Sources */,
 				27EA5C9126CE67B200CFF2C0 /* SceneDelegate.swift in Sources */,
+				27EA5CB026CE695000CFF2C0 /* Photos.swift in Sources */,
+				27EA5CBA26CE6E3300CFF2C0 /* PhotosCollectionViewCell.swift in Sources */,
+				27EA5CB626CE6B4200CFF2C0 /* UsersTableViewCell.swift in Sources */,
+				27EA5CAE26CE692700CFF2C0 /* Albums.swift in Sources */,
+				27EA5CB226CE6A1A00CFF2C0 /* UIView+AutoLayout.swift in Sources */,
+				27EA5CAC26CE68EE00CFF2C0 /* Users.swift in Sources */,
+				27EA5CB426CE6A9A00CFF2C0 /* UsersViewController.swift in Sources */,
+				27EA5CAA26CE682800CFF2C0 /* NetworkDataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27EA5CBB26CE76A000CFF2C0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27EA5CBC26CE76A000CFF2C0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27EA5CBB26CE76A000CFF2C0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27EA5C8326CE67B200CFF2C0 /* Project object */;
 }
