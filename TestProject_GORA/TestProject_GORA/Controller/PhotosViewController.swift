@@ -11,7 +11,6 @@ import Kingfisher
 class PhotosViewController: UIViewController {
     
     private let networkDataFetcher = NetworkDataFetcher()
-    
     var photos: Photos?
     var albumsPhoto: [Photo] = []
     var albums: Albums?
@@ -22,7 +21,7 @@ class PhotosViewController: UIViewController {
             usersCollectionView.reloadData()
         }
     }
-   
+    
     
     private lazy var usersCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -38,30 +37,8 @@ class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        networkDataFetcher.fetchPhotos() { response in
-            guard let search = response else { return }
-            self.photos = search
-            for item in self.albumID {
-                _ = self.photos?.filter({ (photo: Photo) -> Bool in
-                    if photo.albumId == item {
-                        self.albumsPhoto.append(photo)
-                    }
-                    return photo.albumId == item
-                })
-            }
-            self.sortedPhotos = self.albumsPhoto
-        }
-        networkDataFetcher.fetchAlbums() { response in
-            guard let search = response else { return }
-            self.albums = search
-            _ = self.albums?.filter ({ (album: Album) -> Bool in
-                if album.userId == self.userID {
-                    self.albumID.append(album.id)
-                }
-                return album.userId == self.userID
-            })
-            
-        }
+        fetchPhotos()
+        fetchAlbums() 
     }
     
 }
@@ -78,6 +55,36 @@ extension PhotosViewController {
         ]
         NSLayoutConstraint.activate(constraints)
     }
+    
+    private func fetchPhotos() {
+        networkDataFetcher.fetchPhotos() { response in
+            guard let search = response else { return }
+            self.photos = search
+            for item in self.albumID {
+                _ = self.photos?.filter({ (photo: Photo) -> Bool in
+                    if photo.albumId == item {
+                        self.albumsPhoto.append(photo)
+                    }
+                    return photo.albumId == item
+                })
+            }
+            self.sortedPhotos = self.albumsPhoto
+        }
+    }
+    
+    private func fetchAlbums() {
+        networkDataFetcher.fetchAlbums() { response in
+            guard let search = response else { return }
+            self.albums = search
+            _ = self.albums?.filter ({ (album: Album) -> Bool in
+                if album.userId == self.userID {
+                    self.albumID.append(album.id)
+                }
+                return album.userId == self.userID
+            })
+            
+        }
+    }
 }
 
 extension PhotosViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -87,12 +94,12 @@ extension PhotosViewController: UICollectionViewDelegateFlowLayout, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotosCollectionViewCell.self), for: indexPath) as! PhotosCollectionViewCell
-            cell.namePhotoLabel.text = sortedPhotos?[indexPath.row].title
-            let url = URL(string: sortedPhotos?[indexPath.row].url ?? "")
-            DispatchQueue.main.async {
-                cell.photosImageView.kf.indicatorType = .activity
-                cell.photosImageView.kf.setImage(with: url)
-            }
+        cell.namePhotoLabel.text = sortedPhotos?[indexPath.row].title
+        let url = URL(string: sortedPhotos?[indexPath.row].url ?? "")
+        DispatchQueue.main.async {
+            cell.photosImageView.kf.indicatorType = .activity
+            cell.photosImageView.kf.setImage(with: url)
+        }
         
         return cell
     }

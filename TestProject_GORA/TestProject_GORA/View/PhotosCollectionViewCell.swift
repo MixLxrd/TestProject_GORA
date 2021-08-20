@@ -25,13 +25,13 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     }()
     
     override init(frame: CGRect) {
-            super.init(frame: frame)
-            setupLayout()
-        }
-        
-        required init?(coder: NSCoder) {
-            super.init(coder: coder)
-        }
+        super.init(frame: frame)
+        setupLayout()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }
 
 extension PhotosCollectionViewCell {

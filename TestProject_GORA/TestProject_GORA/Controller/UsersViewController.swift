@@ -25,16 +25,16 @@ class UsersViewController: UIViewController {
         tableView.delegate = self
         return tableView
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         networkDataFetcher.fetchUsers() { response in
-                guard let search = response else { return }
-                self.users = search
+            guard let search = response else { return }
+            self.users = search
         }
     }
-
+    
 }
 
 extension UsersViewController {
@@ -69,5 +69,5 @@ extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
         vc.userID = userID
         navigationController?.pushViewController(vc, animated: true)
     }
-
+    
 }
